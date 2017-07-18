@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="70dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/id_fab_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/plus_x"
+            android:transitionName="loginFab"
+            app:fabSize="normal"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/id_cardview"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center_horizontal"
+            app:cardBackgroundColor="#2ea67f"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="50dp"
+                    android:text="注册"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="#f0f7f4"
+                    android:theme="@style/TextHintLabel">
+
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/selector_bg_edit_2"
+                        android:hint="用户名"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#f0f7f4"
+                        android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                        android:textSize="13sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="#f0f7f4"
+                    android:theme="@style/TextHintLabel"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/selector_bg_edit_2"
+                        android:hint="密码"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#f0f7f4"
+                        android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                        android:textSize="13sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="#f0f7f4"
+                    android:theme="@style/TextHintLabel"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/selector_bg_edit_2"
+                        android:hint="重复密码"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#f0f7f4"
+                        android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                        android:textSize="13sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bt_shape_2"
+                    android:text="注册"
+                    android:textColor="@color/edit_border_color"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+
+</RelativeLayout>

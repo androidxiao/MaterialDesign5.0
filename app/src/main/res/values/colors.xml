@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorInitFloatBackground">#b0ffffff</color>
+    <color name="colorCollapsedFloatBackground">#e4e4e4</color>
+    <color name="window_background">#eff3f6</color>
+    <!--<color name="colorControlNormal">#d71345</color>-->
+    <color name="colorControlNormal">#24b484</color>
+    <color name="colorControlActivated">#303f9f</color>
+
+    <color name="edit_border_color">#2fa881</color>
+    <color name="edit_border_normal_color">#c5c5c5</color>
+    <color name="edit_border_normal_2_color">#FFCC00</color>
+
+
+    <color name="white_color">#ffffff</color>
+    <color name="click_grey_color">#e0e6ea</color>
+    <color name="more_black_color">#262a3b</color>
+    <color name="text_grey_color">#bcbec7</color>
+    <color name="cut_line_color">#cfdce6</color>
+</resources>

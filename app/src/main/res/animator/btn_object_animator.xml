@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+                android:duration="3000"
+                android:propertyName="width"
+                android:valueFrom="100"
+                android:valueTo="20"
+                android:valueType="intType">
+
+</objectAnimator>
+
+    <!--
+    与<animator>的例子相比，就只是多了一个android:propertyName的属性，设置值为width。
+    也就是说，动画改变的属性为width，值将从100逐渐减到20。另外，值是从setWidth()传递过去的，
+    再从getWidth()获取。
+    而且，这里设置的值代表的是比例值，因此，还需要进行计算转化为实际的宽度值。最后，
+    对象实际的宽度值为view.getLayoutParams().width。因此，
+    我将用一个包装类来包装原始的view对象，对其提供setWidth()和getWidth()方法，
+    -->
+
+
+    <!--
+    ObjectAnimator提供了属性的设置，但相应的需要有该属性的setter和getter方法。
+    而ValueAnimator则只是定义了值的变化，并不指定目标属性，所以也不需要提供setter和getter方法，
+    但只能在AnimatorUpdateListener监听器里手动更新属性。不过，也因为没有指定属性，
+    所以其实更具灵活性了，你可以在监听器里根据值的变化做任何事情，比如更新多个属性，
+    比如在缩放宽度的同时做垂直移动。
+
+    为了对View更方便的设置属性动画，Android系统也提供了View的一些属性和相应的setter和getter方法：
+
+    alpha：透明度，默认为1，表示不透明，0表示完全透明
+    pivotX 和 pivotY：旋转的轴点和缩放的基准点，默认是View的中心点
+    scaleX 和 scaleY：基于pivotX和pivotY的缩放，1表示无缩放，小于1表示收缩，大于1则放大
+    rotation、rotationX 和 rotationY：基于轴点(pivotX和pivotY)的旋转，rotation为平面的旋转，rotationX和rotationY为立体的旋转
+    translationX 和 translationY：View的屏幕位置坐标变化量，以layout容器的左上角为坐标原点
+    x 和 y：View在父容器内的最终位置，是左上角坐标和偏移量（translationX，translationY）的和
+
+    -->

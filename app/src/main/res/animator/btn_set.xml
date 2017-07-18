@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:ordering="together"
+    >
+
+    <set
+        android:duration="3000"
+        android:ordering="together">
+        <objectAnimator
+            android:propertyName="width"
+            android:valueFrom="100"
+            android:valueTo="20"
+            android:valueType="intType"/>
+
+        <!--<objectAnimator-->
+            <!--android:propertyName="marginTop"-->
+            <!--android:valueFrom="0"-->
+            <!--android:valueTo="100"-->
+            <!--android:valueType="intType"/>-->
+    </set>
+
+    <!--<set-->
+        <!--android:duration="3000"-->
+        <!--android:ordering="together">-->
+        <!--<objectAnimator-->
+            <!--android:propertyName="height"-->
+            <!--android:valueFrom="20"-->
+            <!--android:valueTo="100"-->
+            <!--android:valueType="intType"/>-->
+
+        <!--<objectAnimator-->
+            <!--android:propertyName="marginLeft"-->
+            <!--android:valueFrom="20"-->
+            <!--android:valueTo="100"-->
+            <!--android:valueType="intType"/>-->
+    <!--</set>-->
+</set>

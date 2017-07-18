@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+       android:duration="2000"
+       android:fromXScale="0.5"
+       android:fromYScale="1.0"
+       android:pivotX="0%"
+       android:pivotY="100%"
+       android:startOffset="5000"
+       android:fillAfter="true"
+       android:toXScale="1.5"
+       android:toYScale="1.5">
+
+
+
+    <!--
+    android:duration 动画从开始到结束持续的时长，单位为毫秒
+    android:fromXScale 动画开始时X坐标上的缩放尺寸
+    android:toXScale 动画结束时X坐标上的缩放尺寸
+    android:fromYScale 动画开始时Y坐标上的缩放尺寸
+    android:toYScale 动画结束时Y坐标上的缩放尺寸
+    PS：以上四个属性，0.0表示缩放到没有，1.0表示正常无缩放，小于1.0表示收缩，大于1.0表示放大
+    android:pivotX 缩放时的固定不变的X坐标，一般用百分比表示，0%表示左边缘，100%表示右边缘
+    android:pivotY 缩放时的固定不变的Y坐标，一般用百分比表示，0%表示顶部边缘，100%表示底部边缘
+    -->
+
+    <!--
+    通用属性，接下来看看都有哪些通用属性以及相应的用法：
+    android:duration 动画从开始到结束持续的时长，单位为毫秒
+    android:detachWallpaper 设置是否在壁纸上运行，只对设置了壁纸背景的窗口动画(window animation)有效。设为true，则动画只在窗口运行，壁纸背景保持不变
+    android:fillAfter 设置为true时，动画执行完后，View会停留在动画的最后一帧；默认为false；如果是动画集，需在<set>标签中设置该属性才有效
+    android:fillBefore 设置为true时，动画执行完后，View回到动画执行前的状态，默认即为true
+    android:fillEnabled 设置为true时，android:fillBefore的值才有效，否则android:fillBefore会被忽略
+    android:repeatCount 设置动画重复执行的次数，默认为0，即不重复；可设为-1或infinite，表示无限重复
+    android:repeatMode 设置动画重复执行的模式，可设为以下两个值其中之一：
+    restart 动画重复执行时从起点开始，默认为该值
+    reverse 动画会反方向执行
+    android:startOffset 设置动画执行之前的等待时长，毫秒为单位；重复执行时，每次执行前同样也会等待一段时间
+    android:zAdjustment 表示被设置动画的内容在动画运行时在Z轴上的位置，取值为以下三个值之一：
+    normal 默认值，保持内容在Z轴上的位置不变
+    top 保持在Z周最上层
+    bottom 保持在Z轴最下层
+    android:interpolator 设置动画速率的变化，比如加速、减速、匀速等，需要指定Interpolator资源，后面再详细讲解
+    PS：<set>标签还有个android:shareInterpolator属性，设置为true时则可将interpolator应用到所有子元素中
+    -->
+</scale>

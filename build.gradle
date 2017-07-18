@@ -1,0 +1,44 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+//以下配置是为了解决主项目与第三方库之间的某些版本冲突（具体使用方法参考项目中的build.gradle文件）
+ext {
+    //全局变量控制，可在module中的build.gradle文件通过rootProject.ext.xxx开头来使用
+    compileSdkVersion = 25
+    buildToolsVersion = '25.0.2'
+    supportVersion = '25.1.1'
+    //主程序版本
+    targetSdkVersion = 25
+    minSdkVersion = 16
+    versionCode = 1
+    versionName = "v1.0.0"
+    //library版本
+    jjdxm_minSdkVersion = 9
+    jjdxm_versionCode = 1
+    jjdxm_versionName = "v1.0.0"
+    jjdxm_v4 = 'com.android.support:support-v4:' + supportVersion
+    jjdxm_v7 = 'com.android.support:appcompat-v7:' + supportVersion
+    jjdxm_design = 'com.android.support:design:' + supportVersion
+    jjdxm1_cardview = 'com.android.support:cardview-v7:' + supportVersion
+    jjdxm_recyclerview = 'com.android.support:recyclerview-v7:' + supportVersion
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

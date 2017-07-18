@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/exit_to_left.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/src/main/res/anim/exit_to_left.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/exit_to_right.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/src/main/res/anim/exit_to_right.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/bottom_disappear.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/src/main/res/anim/bottom_disappear.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/out_to_right.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/src/main/res/anim/out_to_right.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/in_to_left.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/src/main/res/anim/in_to_left.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/loading_anim_icon.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/src/main/res/anim/loading_anim_icon.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/bottom_appear.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/src/main/res/anim/bottom_appear.xml"
+    },
+    {
+        "merged": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/chawei/Desktop/self/MaterialDesign5.0/commonlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/anim/abc_slide_in_top.xml"
+    }
+]

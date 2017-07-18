@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--导航栏底色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--状态栏底色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--Activity窗口的颜色-->
+        <item name="android:windowBackground">@color/window_background</item>
+        <!--按钮选中或者点击获得焦点后的颜色-->
+        <!--<item name="colorAccent">#00ff00</item>-->
+        <!--和 colorAccent相反，正常状态下按钮的颜色-->
+        <!--<item name="colorControlNormal">#ff0000</item>-->
+        <!--Button按钮正常状态颜色-->
+        <!--<item name="colorButtonNormal">@color/accent_material_light</item>-->
+        <!--EditText 输入框中字体的颜色-->
+        <!--<item name="editTextColor">#d71345</item>-->
+    </style>
+
+
+
+    <style name="MenuTextStyle">
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CheckBoxStyle" parent="Theme.AppCompat.Light">
+        <item name="android:button">@drawable/selector_item_checked</item>
+        <item name="android:background">@null</item>
+        <!--<item name="android:buttonTint"></item>-->
+    </style>
+
+    <style name="translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="TextHintLabel">
+        <item name="colorControlActivated">#FFCC00</item>
+    </style>
+
+    <style name="EditTextError">
+        <item name="android:textColor">#ffcc00</item>
+        <!--<item name="android:textSize">20sp</item>-->
+    </style>
+
+    <style name="OverFlowMenuTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--menu 菜单的背景色-->
+        <item name="android:itemBackground">@color/white_color</item>
+        <!--menu 菜单的字体颜色-->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!--menu 窗口不覆盖toolbar视图-->
+        <item name="overlapAnchor">false</item>
+        <!-- overflow出菜单内部的每个Item的字体颜色与大小 -->
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#d71345</item>
+        <!--<item name="android:dropDownVerticalOffset">182dp</item>-->
+        <item name="android:popupBackground">@mipmap/huikuan_icon</item>
+        <!--<item name="android:colorBackground">#000</item>-->
+    </style>
+
+    <!-- overflow弹出菜单的样式 -->
+    <style name="Base.Widget.AppCompat.ListPopupWindow" parent="">
+        <!-- 菜单默认弹出的位置是0，此处将它在垂直方向的偏移量设置为52dp，即让弹出菜单向下移动一些位置 -->
+        <item name="android:dropDownVerticalOffset">52dp</item>
+        <!-- 弹出菜单的背景图片 -->
+        <!--<item name="android:popupBackground">@drawable/bg_dropmenu_topbar</item>-->
+    </style>
+    <!-- overflow弹出菜单内部的样式 -->
+    <style name="Base.Widget.AppCompat.ListView.DropDown" parent="android:Widget.ListView">
+        <!-- overflow弹出菜单内部，每个Item之间的分割线 -->
+        <!--<item name="android:divider">@drawable/ic_divider</item>-->
+        <!-- overflow弹出菜单内部，每个Item的selector -->
+        <!--<item name="android:listSelector">@drawable/actionbar_item_selector</item>-->
+    </style>
+
+
+    <!--<style name=”RedThemeOverlay” parent=”android:ThemeOverlay.Material”>-->
+
+    <!--<item name=”android:colorEdgeEffect”>#FF0000</item>-->
+
+    <!--</style>-->
+
+    <!--<ListView … android:theme=”RedThemeOverlay” />-->
+
+    <!--通过上面同样的方式，您可以自定义所有 theme 里面的属性。-->
+
+    <!--Theme VS Style-->
+
+    <!--那么问题来了， Theme 和 Style 到底有啥区别呢？ 他们的定义方式是一模一样的，只是使用的地方不一样而已。-->
+
+    <!--Theme 是用来设置应用全局 主题风格的， 5.0 上可以让你局部的调整设计风格；-->
+
+    <!--而 Style 主要是用在 View 上的，当你在 view 上设置 style 的时候，LayoutInflater  会读取 该 style 的内容并在任意单独设置的样式之前把该内容设置到  AttributeSet 中。-->
+
+    <!--总结起来就是： Theme 是全局的；Style 是局部的。-->
+</resources>

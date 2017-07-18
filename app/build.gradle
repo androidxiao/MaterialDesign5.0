@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+Properties props = new Properties()
+props.load(new FileInputStream(file(rootProject.file("local.properties"))))
+
+android {
+//    sdk版本设置规则
+//    minSdkVersion <= targetSdkVersion <= compileSdkVersion
+//    minSdkVersion <= buildToolsVersion <= compileSdkVersion
+//    compileSdkVersion 25
+//    buildToolsVersion "25.0.2"
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    signingConfigs {
+        release {
+//            storeFile file('signing.keystore')
+            storeFile file("/Users/chawei/Desktop/anxindeli_android/trunk/anxindeli_app_key.jks")
+            storePassword props['signing.password']
+            keyAlias props['signing.alias']
+            keyPassword props['signing.password']
+            println("====== signingConfigs.release ======")
+        }
+    }
+    defaultConfig {
+        applicationId "com.material.design.widget"
+//        minSdkVersion 16
+//        targetSdkVersion 25
+//        versionCode 1
+//        versionName "1.0"
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        println("====== defaultConfig ======")
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+//        vectorDrawables.generatedDensities=['hdpi','xxhdpi']
+    }
+    buildTypes {
+
+//        debug{
+//            signingConfig signingConfigs.debug
+//        }
+
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    //        exclude group: 'com.android.support', module: 'support-annotations'
+    //    })
+    //    compile 'com.android.support:appcompat-v7:25.1.1'
+    //    compile 'com.android.support:design:25.1.1'
+    compile rootProject.ext.jjdxm_v7
+    compile rootProject.ext.jjdxm_design
+    compile 'com.airbnb.android:lottie:1.0.1'
+    //    compile 'com.android.support:cardview-v7:25.1.1'
+    compile rootProject.ext.jjdxm1_cardview
+    compile project(':commonlibrary')
+    //    testCompile 'junit:junit:4.12'
+}

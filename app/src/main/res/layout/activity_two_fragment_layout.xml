@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <fragment
+        android:name="com.material.design.widget.materailactivity.twofragment.LeftFragment"
+        android:id="@+id/LeftFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+    <!--初始不添加该fragment，在代码中replace-->
+    <FrameLayout
+        android:id="@+id/RightFragment"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

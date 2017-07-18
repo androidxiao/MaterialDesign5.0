@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#d71345"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_tv_menu"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/white_color"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="我们的"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+     >
+
+
+    </FrameLayout>
+
+</RelativeLayout>

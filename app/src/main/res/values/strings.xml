@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Material Design5.0</string>
+
+    <string name="header_scrolling_behavior">com.material.design.widget.widget.HeaderScrollingBehavior</string>
+    <string name="header_float_behavior">com.material.design.widget.widget.HeaderFloatBehavior</string>
+    <string name="title_list_to_grid">List to grid</string>
+</resources>
