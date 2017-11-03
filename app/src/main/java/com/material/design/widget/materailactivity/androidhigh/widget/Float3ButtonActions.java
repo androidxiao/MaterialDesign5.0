@@ -35,7 +35,7 @@ public class Float3ButtonActions {
     private int midTopPx;
     private int right2Px;
     private int widthHalf;
-
+    private int viewId=1;
     public Float3ButtonActions(Context context, FrameLayout frameLayout) {
         mContext = context;
         mFrameLayout = frameLayout;
@@ -96,6 +96,8 @@ public class Float3ButtonActions {
         imageButton.setImageDrawable(drawable);
         imageButton.setOnClickListener(clickListener);
         mFrameLayout.addView(imageButton);
+        imageButton.setTag(viewId);
+        viewId++;
         mImageButtons.add(imageButton);
     }
 

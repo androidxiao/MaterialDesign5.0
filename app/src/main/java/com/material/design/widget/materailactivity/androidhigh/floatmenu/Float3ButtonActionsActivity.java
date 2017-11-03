@@ -36,7 +36,19 @@ public class Float3ButtonActionsActivity extends AppCompatActivity {
         View.OnClickListener onClickListener=new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "clicked", Toast.LENGTH_SHORT).show();
+                int tag= (int) view.getTag();
+                switch (tag){
+                    case 1:
+                        Toast.makeText(getApplicationContext(), "编辑", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 2:
+                        Toast.makeText(getApplicationContext(), "发送", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 3:
+                        Toast.makeText(getApplicationContext(), "复制", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+
             }
         };
 
